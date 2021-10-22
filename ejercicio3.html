@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>EV3_UD2</title>
+    <script type="text/javascript">
+        function anade() {
+          var contador = document.getElementsByTagName("li");
+          var node = document.getElementById("lista");
+          var textNode = document.createTextNode("elemento de la lista" + contador.length);
+          node.appendChild(textNode);
+          document.getElementById("lista").appendChild(node);
+        }
+
+    </script>
+</head>
+<body>
+    <ul id="lista">
+        <li>elemento de la lista1</li>
+        <li>elemento de la lista2</li>
+        <li>elemento de la lista3</li>
+        <li>elemento de la lista4</li>
+        <li>elemento de la lista5</li>
+    </ul>
+    <input type="button" value="Añadir elemento" onclick="anade();">
+</body>
+</html>
